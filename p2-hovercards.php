@@ -10,7 +10,7 @@ Author:       Automattic
 Author URI:   http://automattic.com/wordpress-plugins/
 License:      GPLv2 or later
 
-Text Domain:  bulk-user-management
+Text Domain:  p2-hovercards
 Domain Path:  /languages/
 
 **************************************************************************/
