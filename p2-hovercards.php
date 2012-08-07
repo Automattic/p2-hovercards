@@ -3,11 +3,11 @@
 **************************************************************************
 
 Plugin Name:  P2 Hovercards
-Plugin URI:   
+Plugin URI:   https://github.com/Automattic/p2-hovercards
 Description:  API for adding hovercards on things like Zendesk, Trac, etc
 Version:      1.0
 Author:       Automattic
-Author URI:   http://automattic.com/wordpress-plugins/
+Author URI:   http://automattic.com/
 License:      GPLv2 or later
 
 Text Domain:  p2-hovercards
