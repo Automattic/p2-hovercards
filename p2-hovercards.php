@@ -41,9 +41,6 @@ Domain Path:  /languages/
 
  */
 
-if ( file_exists( dirname( __FILE__ ) . '/services.php' ) )
-	include dirname( __FILE__ ) . '/services.php';
-
 class P2_hovercards {
 
 	const VERSION = 1.0;
