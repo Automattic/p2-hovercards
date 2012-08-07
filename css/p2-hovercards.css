@@ -1,0 +1,85 @@
+.p2-hovercard {
+	background: white;
+	box-shadow: 0 0 8px #888;
+	z-index: 25;
+	position: absolute;
+	margin: 5px;
+	margin-top: -2px;
+	max-width: 100%;
+
+	/* hide until hover */
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.2s 0 ease;
+	   -moz-transition: all 0.2s 0 ease;
+	     -o-transition: all 0.2s 0 ease;
+	        transition: all 0.2s 0 ease;
+}
+
+.p2_hovercardify:hover > .p2-hovercard {
+	max-height: 1000px;
+	opacity: 1;
+	-webkit-transition: all 0.2s .5s ease;
+	   -moz-transition: all 0.2s .5s ease;
+	     -o-transition: all 0.2s .5s ease;
+	        transition: all 0.2s .5s ease;
+}
+
+.p2-hovercard .content,
+.p2-hovercard .comments,
+.p2-hovercard .meta {
+	padding: 10px;
+}
+
+.p2-hovercard h4 {
+	font-size: 18px !important;
+	margin: 0 0 5px 0 !important;
+	padding: 0;
+}
+.p2-hovercard h5 {
+	font-size: 17px !important;
+}
+
+.p2-hovercard .subtitle,
+.p2-hovercard .comment-meta {
+	font-size: 11px;
+	color: #9FA09F;
+}
+
+.p2-hovercard .comments { padding-top: 0; }
+.p2-hovercard ul { list-style: none; margin: 0 !important; }
+.p2-hovercard .comment {
+	list-style: none !important;
+	margin: 10px 0 !important;
+}
+.p2-hovercard .comment-value li {
+	list-style: none !important;
+}
+
+.p2-hovercard .meta {
+	background: black;
+	color: white;
+	font-size: .9em;
+}
+.p2-hovercard .single-meta {
+	display: inline-block;
+}
+.p2-hovercard .single-meta:after {
+	padding: 0 6px;
+	content: "\00B7";
+}
+.p2-hovercard .single-meta:last-of-type:after {
+	padding: 0; content: "";
+}
+
+
+/* Indicators */
+.p2_hovercardify > a { border-bottom: 1px dotted; }
+a.nocard { border-bottom: none; }
+.p2_hovercardify .spinner + a { padding-left: 15px; }
+.p2_hovercardify .spinner { display: inline-block; top: -5px !important; }
+
+/* Hovercards get 'stuck' inside comments */
+.commentlist,
+.commentlist ul { overflow: visible !important; }
