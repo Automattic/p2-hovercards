@@ -16,7 +16,7 @@ New services can be added with `p2_hovercards_add_service()`. It takes the name 
 
 Use the following example or look in `examples.php` for more in depth examples:
 
-	p2_hovercards_add_service( 'zendesk', '#(\d+)-z', '<a href="http://$2.trac.wordpress.org/ticket/$1">$0</a>', '$1', function( $args ){
+	p2_hovercards_add_service( 'core_trac', '#(\d+)', '<a href="http://core.trac.wordpress.org/ticket/$1">$0</a>', '$1', function( $args ){
 		$id = (int) $args[ 'id' ];
 		$url = $args[ 'url' ];
 		$service = $args[ 'service' ];
